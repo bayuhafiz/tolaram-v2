@@ -272,9 +272,11 @@ union.navbar = (function() {
 				e.preventDefault();
 				if ($("#st-container").hasClass("menu-open")) {
 					//$(this).parent(".masthead").addClass("fixed-menu");
+					$(".masthead").css('background','#FFF');
 					setTimeout(function() {
 						$(".st-content").prependTo("body");
 						$(".masthead").prependTo("body");
+
 
 						if($('body').hasClass('page-home')) {
 							union.feature.rebindScroll();
@@ -289,6 +291,7 @@ union.navbar = (function() {
 					
 				} else {
 					//$(this).parent(".masthead").removeClass("fixed-menu");
+					$(".masthead").css('background','none');
 					htmlHeight = $("html").height();
 					scrollPos = $(window).scrollTop();
 					$(".st-content").appendTo(".st-pusher");

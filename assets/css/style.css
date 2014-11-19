@@ -103,9 +103,9 @@
 
         .m_jumbotron.full .carousel .box-content{
             float:right;
-            width:700px;
+            width:1000px;
             height:auto; 
-            padding: 10px 0 15px 50px; 
+            padding: 10px 0 35px 120px; 
             background:rgba(133,31,18,0.7);
             text-align: right;
         }
@@ -633,11 +633,11 @@
         }
 
         .slick-prev{
-            left:3%;
-            top:50%;
+            left:30px;
+            top:33%;
         }
 
         .slick-next{
-            right:3%;
-            top:50%;
+            right:30px;
+            top:33%;
         }
